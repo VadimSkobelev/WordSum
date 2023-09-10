@@ -60,7 +60,7 @@ func main() {
 
 		flag2 := checkWord(wordInSlice)
 
-		if flag2 == true {
+		if flag2 {
 
 			if word != "=" {
 				allWords = append(allWords, word)
@@ -89,7 +89,7 @@ func main() {
 					os.Exit(0)
 				}
 			}
-		} else if flag2 == false {
+		} else if !flag2 {
 			fmt.Println("Ошибка ввода! Символы некорректны. Введённое слово не учтёно.")
 		}
 	}
